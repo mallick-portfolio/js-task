@@ -1,0 +1,81 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --light-grey: #e0e0e0;
+  --dark-grey: #606060;
+  --red-bg: #da1e5d;
+}
+#nav button {
+  padding: 8px 16px;
+  background-color: #e0e0e0;
+  border: 2px solid var(--light-grey);
+  border-radius: 5px;
+}
+.active {
+    background-color: var(--dark-grey);
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.layout1 > div {
+  padding: 20px 40px;
+  background-color: var(--red-bg);
+  margin: 20px 0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.card1 {
+  grid-area: header;
+}
+.card2 {
+  grid-area: left;
+}
+.card3 {
+  grid-area: main;
+}
+.card4 {
+  grid-area: right;
+}
+.card5 {
+  grid-area: footer;
+}
+
+.layout2 {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "left main main main main right"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  padding: 10px;
+}
+
+.layout2 > div {
+  background-color: var(--red-bg);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.layout3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: none;
+  gap: 10px;
+  padding: 10px;
+}
+
+.layout3 > div {
+  background-color: var(--red-bg);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 20px;
+}

@@ -1,0 +1,72 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --light-bg: #f0f0f0;
+  --dark-grey: #404040;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.box {
+  display: flex;
+}
+h2 {
+  text-align: center;
+  animation-name: myanimation;
+  animation-duration: 2s;
+}
+ul{
+    list-style: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+ul li{
+    margin: 4px 0;
+}
+
+@keyframes myanimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.image {
+  width: 50%;
+}
+
+.item {
+  width: 50%;
+  border-radius: 20px;
+  background-color: var(--light-bg);
+  animation: boxanimation 1.5s alternate ease-in;
+}
+
+@keyframes boxanimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.img {
+  width: 80%;
+  padding: 40px;
+  margin: 0 auto;
+  animation: imageanimation 1.5s alternate ease-in;
+}
+@keyframes imageanimation {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
